@@ -1,0 +1,131 @@
+.fream{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+/* .........HEADER....... */
+header{
+    background-image:url(gallery/naturesky.webp) ;
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+    padding: 3em;
+    color:rgb(4, 0, 5);
+    font-size: 2em;
+}
+header h1{
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    
+}
+header nav{
+    text-align: right;
+    align-items:end;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+header a{
+    color: whitesmoke;
+    text-decoration: underline;
+    text-shadow: 5px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 20px; /* Spacing between grid items */
+    max-width: 900px; /* Limit width for larger screens */
+    margin-bottom: 20px;
+}
+.package {
+    border-radius: 10px;
+    overflow: hidden; /* Hide content that overflows rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    background-color: #fff; /* White background for packages */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+  
+.package:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+  
+.package img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevents a small gap below the image */
+}
+  
+.package-content {
+    padding: 15px;
+    text-align: center; /* Center text within packages */
+}
+  
+.package-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.packages-title {
+    background-color: #a0522d; /* Sienna */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+  
+@media (max-width: 500px) {
+.container {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+  
+/* Styles for the extra elements (T, Sort ex, etc.) */
+.extra-text {
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #555;  
+}
+  
+.extra-text.large {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* ....................FOOTER............ */
+footer{
+    padding: 0.5em;
+    background-color: white;
+    color: black;
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.address{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links{
+    text-align: right;
+}
+.link-edit{
+    color: black;
+    background-color: white;
+}
+.link-edit a{
+    font-size: 2em;
+}
+.copy{
+    text-align: center;
+    text-decoration: chartreuse;
+}
